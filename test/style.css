@@ -1,0 +1,97 @@
+body {
+  background-image: url(hatter.jpg);
+  background-position: 100%;
+  color: black;
+  text-align: center;
+}
+ 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: rgb(62, 139, 52);
+  font-weight: bold;
+  border: solid black 2px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: cursive;
+  background-image: url("xmasbg.png");
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+ 
+.header {
+  display: flex;
+  align-items: center;
+  text-shadow: -1px -1px 0 rgb(245, 245, 245), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+ 
+.timer, .errors, .accuracy,
+.cpm, .wpm {
+  background-color: #f73b3b;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: black 5px 8px 5px;
+}
+ 
+.cpm, .wpm  {
+  display: none;
+}
+ 
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+ 
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 2rem;
+}
+ 
+.quote {
+  background-color: #f73b3b;
+  font-size: 1.8rem;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: black 5px 8px 5px;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+ 
+.input_area {
+  background-color: #f73b3b;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+ 
+.restart_btn {
+  display: none;
+  background-color: white;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+ 
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+ 
+.correct_char {
+  color: darkgreen;
+}

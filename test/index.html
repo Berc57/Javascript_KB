@@ -1,0 +1,56 @@
+<html lang="hu">
+<head>
+    <title>Karácsonyi Gyors Gépeles</title>
+ 
+    <!-- link the CSS file here -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      Karácsonyi Gyors Gépelés
+    </div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">Szavak</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">Betűk</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Hibák</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Idő</div>
+        <div class="curr_time">40mp</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">Százalék</div>
+        <div class="curr_accuracy">0</div>
+      </div>
+    </div>
+ 
+    <div class="quote">
+      Ha készen állsz kattints a mezőre
+    </div>
+    <textarea class="input_area"
+      placeholder="Kezdj el ide gépelni gyorsan!"
+      oninput="processCurrentText()"
+      onfocus="startGame()">
+    </textarea>
+    <button class="restart_btn"
+      onclick="resetValues()">
+      Újraindítás
+    </button>
+  </div>
+  <p id="nyertel">
+
+  </p>
+  <!-- link the JavaScript file here -->
+  <script src="game.js">
+  </script>
+</body>
+</html>
